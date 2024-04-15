@@ -41,14 +41,10 @@ public class tasksForToday {
 
     // Method to display unique tasks
     public static void displayUniqueTasks(ArrayList<String> tasks) {
-        HashSet<String> uniqueTasks = getUniqueValues(tasks);
+        HashSet<String> uniqueTasks = new HashSet<>(tasks);
         displayList(new ArrayList<>(uniqueTasks));
 
     }
 
-    // Method to filter non-unique tasks
-    public static HashSet<String> getUniqueValues(ArrayList<String> list) {
-        return new HashSet<>(list);
-    }
 
 }
